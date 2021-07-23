@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <curl/curl.h>
-
+#include <string.h>
  
 int main(void)
 {
@@ -24,7 +24,13 @@ int main(void)
     curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headerlist);  
   
     /* Now specify the JSon POST data */
-    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, "{\"name\" : \"Minhazur\", \"password\" : \"tim\"}");
+    char post_data[100] = "{\"name\" : \"Minhazur\", \"password\" : \"";
+    char password[100] = "tim";
+    char tail[10] = "\"}";
+    strcat(post_data,password);
+    strcat(post_data,tail);
+
+    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, post_data);
  
     /* Perform the request, res will get the return code */
     res = curl_easy_perform(curl);
