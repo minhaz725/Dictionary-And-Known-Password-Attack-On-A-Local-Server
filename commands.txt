@@ -1,0 +1,15 @@
+to start server
+#npm run start
+
+to populate server, go to request.rest and below the register POST api,
+edit the json username and password. Click send to register a new user.
+To check userlist, run the GET api to check the newly added user. The 
+password will be hashed.
+
+to build the attack file 
+#gcc attack.c -lcurl -o attack   
+
+to excecute attack
+#./attack target_url username
+example:
+#./attack http://localhost:3000/users/login Minhazur 

@@ -10,7 +10,7 @@ app.get('/users' , (req, res) => {
     res.json(users)
 })
 
-app.post('/users' , async (req, res) => {
+app.post('/register' , async (req, res) => {
     try {
         const hashedPass = await bcrypt.hash(req.body.password, 10) 
         const user = {
