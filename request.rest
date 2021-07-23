@@ -6,7 +6,7 @@ Post http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name" : "Minha",
+    "name" : "Minhazur",
     "password" : "tim"
 }
 
@@ -16,6 +16,6 @@ Post http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-    "name" : "Minha",
-    "password" : "tim"
+    "name" : "Minhaz",
+    "password" : "timu"
 }

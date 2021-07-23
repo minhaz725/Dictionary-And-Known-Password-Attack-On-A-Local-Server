@@ -2,13 +2,21 @@
   "name": "SecurityProject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "devStart" : "nodemon server.js"
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhaz725/Dictionary-Attack-On-A-Local-Server.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhaz725/Dictionary-Attack-On-A-Local-Server/issues"
+  },
+  "homepage": "https://github.com/minhaz725/Dictionary-Attack-On-A-Local-Server#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "express": "^4.17.1"
