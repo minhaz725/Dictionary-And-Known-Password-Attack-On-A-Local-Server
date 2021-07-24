@@ -2,7 +2,11 @@ const express = require('express')
 const app = express()
 const bcrypt = require('bcrypt')
 
-app.use(express.json())
+app.use(express.json()) 
+var cors = require('cors')
+
+// use it before all route definitions
+app.use(cors({origin: 'http://localhost:4200'}))
 
 const users = []
 
@@ -11,6 +15,7 @@ app.get('/users' , (req, res) => {
 })
 
 app.post('/register' , async (req, res) => {
+    
     try {
         const hashedPass = await bcrypt.hash(req.body.password, 10) 
         const user = {
