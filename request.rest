@@ -6,8 +6,8 @@ Post http://localhost:3000/register
 Content-Type: application/json
 
 {
-    "name" : "Minhazuur",
-    "password" : "tdsaimsadf"
+    "name" : "Minhazur",
+    "password" : "Buet"
 }
 
 ###
