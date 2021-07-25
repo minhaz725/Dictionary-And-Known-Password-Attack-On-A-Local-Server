@@ -1,4 +1,4 @@
-#Dictionary and Known Password Attack
+# Dictionary and Known Password Attack
 Known password attack is typically a guessing
 attack which uses a precompiled list of options.
 Rather than trying every option, only try
